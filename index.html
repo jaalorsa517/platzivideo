@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleBig.css">
-    <link rel="stylesheet" href="css/styleMedium.css">
-    <link rel="stylesheet" href="css/styleSmall.css">
-    <link rel="stylesheet" href="css/styleMiniSmall.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" type="img/png" href="img/logo_platzi.png">
     <title>Platzi Videos</title>
 </head>
 
-<body>
+<body id="body">
     <div class="main-container">
         <div class="play-list-container">
             <div class="title">
@@ -51,6 +49,7 @@
             </div>
         </div>
         <div class="video-container">
+            <div id='fondo'></div>
             <svg class="back"></svg>
             <svg class="play"></svg>
         </div>
@@ -132,6 +131,7 @@
             </div>
         </div>
     </div>
+    <script src="scripts/events.js"></script>
 </body>
 
 </html>

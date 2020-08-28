@@ -1,0 +1,62 @@
+@media screen and (max-width:800px) {
+    body{
+        width:unset;
+        height: unset;
+    }
+    .main-container {
+        width:unset;
+        height: unset;
+        grid-template-columns: auto;
+        grid-template-rows: 300px 200px repeat(2, 1fr);
+    }
+    .main-container .play-list-container {
+        position: relative;
+        display: none;
+    }
+    .main-container .play-list-container.is-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 4;
+    }
+    
+    .main-container .play-list-container.is-active .title{
+        height: 40px;
+    }
+
+    .main-container .video-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: auto;
+        width: auto;
+        box-sizing: content-box;
+        flex-wrap: wrap;
+    }
+    .main-container .info-video-container {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container .comentarios-container {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        overflow: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container .sugerencias {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
